@@ -1,6 +1,7 @@
 @import "reset";
 @import "body";
 @import "header";
+@import "footer";
 
 a {
 	color: rgba(#000, 0.7);
@@ -11,6 +12,14 @@ a {
 	}
 }
 
+h1, h2, h3, h4 {
+	font-family: 'Alex Brush', cursive;
+}
+
+.pre-formatted {
+	white-space: pre-wrap;
+}
+
 .hero-container {
 	width: 100%;
 	height: 600px;
@@ -19,4 +28,10 @@ a {
 		width: 100%;
 		max-height:100%;
 	}
+	padding-bottom: 2em;
+}
+
+section {
+	text-align: center;
+	padding-bottom: 2em;
 }

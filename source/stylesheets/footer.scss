@@ -1,0 +1,19 @@
+footer {
+	background-color: #DAD9D5;
+	height: 8em;
+
+	nav {
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			list-style-type: none;
+			li {
+				padding: 1em;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
