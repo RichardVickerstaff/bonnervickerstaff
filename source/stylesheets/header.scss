@@ -1,25 +1,107 @@
+$nav-breakpoint: 575px;
+
 header {
-	.headline {
-		text-align: center;
-		padding-bottom: 1em;
-		padding-top: 2em;
- 		font-family: 'Alex Brush', cursive;
-		font-size: 1.5em;
-	}
 
-	nav {
-		ul {
-			display: flex;
-			justify-content: space-evenly;
-			list-style-type: none;
-			li {
-				padding: 1em;
-			}
-		}
-	}
+  .headline {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 1.5em;
+  }
 
-	a {
-		text-decoration: none;
-	}
+  a {
+    text-decoration: none;
+  }
 
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  ul {
+    text-align: center;
+    li {
+      padding-bottom: 1em;
+    }
+    li:last-child {
+      padding-bottom: 1.5em;
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 28px 20px;
+    user-select: none;
+  }
+
+  .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .menu-icon .navicon:after {
+    top: -5px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+
+  @media screen and (min-width: $nav-breakpoint) {
+
+    .menu-icon {
+      display: none;
+    }
+
+    .menu {
+      clear: none;
+      max-height: none;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        li {
+          padding: 1em;
+        }
+      }
+    }
+  }
 }
