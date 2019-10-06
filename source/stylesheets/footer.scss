@@ -1,6 +1,6 @@
 footer {
 	background-color: #DAD9D5;
-	height: 8em;
+	height: 4em;
 
 	nav {
 		ul {
@@ -9,6 +9,15 @@ footer {
 			list-style-type: none;
 			li {
 				padding: 1em;
+
+        .copyright{
+          padding-top: 5px;
+
+          i {
+            text-align: center;
+            padding-left: 5px;
+          }
+        }
 			}
 		}
 	}
