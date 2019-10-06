@@ -1,10 +1,43 @@
 .hero-container
 	= image_tag('tour.jpeg', class: 'hero-image')
 
-section
-  h2 Getting there
+section.address
+  h2 Location
+  div
+    p Easton Grange
+    p Kettleburgh Road, Easton, Woodbridge, Suffolk IP13 0EL
+  iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8114.662372764354!2d1.3202097154472805!3d52.18558219974998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa478485f7bb066db!2sEaston%20Grange%20Wedding%20Venue!5e0!3m2!1sen!2suk!4v1570364313363!5m2!1sen!2suk" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""
 
-  h3 Taxis
+section.directions
+  h2 Taxis
+  p We strongly advise booking taxis in advance, both for travelling to and from the venue at the end of the evening.
 
-  h3 Where to stay
-  p Here is a list of a few local places to stay
+  div
+    ul
+      li 
+        = link_to('M&R Cars, Woodbridge', 'https://www.mandrcars.co.uk/')
+        span<> -
+        a href="tel:01394380034" =< "01394 380034"
+      li
+        = link_to('Hawk Express, Ipswich', 'http://www.hawkexpresscabs.co.uk/book-online')
+        span<> -
+        a href="tel:01473222222" =< "01473 222222"
+      li
+        = link_to('Woodbridge Cars, Woodbridge', 'http://www.woodbridgecars.co.uk/')
+        span<> -
+        a href="tel:01394610210" =< "01394 610210"
+
+section.accommodation
+  h2 Nearby Accommodation
+  div
+    ul
+      li
+        = link_to('Ufford Park Hotel (9miles away)', 'http://www.uffordpark.co.uk')
+      li
+        = link_to("The Crown Hotel, Framlingham (4miles away)", 'http://www.crownframlingham.co.uk/')
+      li
+        = link_to('Kingfishers Cretingham (4miles away)', 'http://www.kingfisherscretingham.co.uk/')
+      li
+        = link_to('Letheringham Mill Cottages (1mile away)', 'http://letheringhammill.co.uk')
+      li
+        = link_to('Easton Farm Park Cottages (1mile away)', 'http://www.eastonfarmpark.co.uk')
