@@ -43,3 +43,18 @@ section {
     padding: 0.5em;
   }
 }
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .gallery_image{
+    img{
+      padding: 5px;
+      max-height: 400px;
+      max-width: 100%;
+      object-fit:scale-down;
+    }
+  }
+}
