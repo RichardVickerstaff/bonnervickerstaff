@@ -5,17 +5,17 @@ header
 			h4 November 7th, 2020
 
   input class="menu-btn" type="checkbox" id="menu-btn"
-  label class="menu-icon" for="menu-btn"
-    span class="navicon"
+  label class="menu-mobile" for="menu-btn"
+    .menu-label Menu
   .menu
     nav
       ul
         li
+          = link_to('Home', '/index.html')
+        li
           = link_to('Order of service', '/order-of-service.html')
         li
           = link_to("Travel & Accommodation", '/travel-and-accommodation.html')
-        li
-          = link_to("Menu", '#')
         li
           = link_to("Gifts", '/gifts.html')
         li
