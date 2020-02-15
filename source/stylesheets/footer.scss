@@ -1,14 +1,16 @@
 footer {
-	background-color: #DAD9D5;
-	height: 4em;
+  background-color: #DAD9D5;
+  height: 5em;
+  width: 100%;
+  bottom: 0;
 
-	nav {
-		ul {
-			display: flex;
-			justify-content: space-evenly;
-			list-style-type: none;
-			li {
-				padding: 1em;
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      li {
+        padding: 1em;
 
         .copyright{
           padding-top: 5px;
@@ -18,11 +20,11 @@ footer {
             padding-left: 5px;
           }
         }
-			}
-		}
-	}
+      }
+    }
+  }
 
-	a {
-		text-decoration: none;
-	}
+  a {
+    text-decoration: none;
+  }
 }
